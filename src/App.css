@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: 'Prompt', sans-serif;
+  background-color: #e3f2fd; /* สีน้ำเงินอ่อนแบบโปร */
+  color: #333333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dashboard {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.sidebar {
+  width: 260px;
+  background-color: #e3f2fd; /* น้ำเงินอ่อน */
+  padding: 20px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05); /* เงาเบาแบบ warehouse */
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  background-color: #e3f2fd; /* พื้นหลัง content */
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #e3f2fd; /* พื้นหลังตาราง */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.order-table th {
+  background-color: #1565c0; /* หัวตารางน้ำเงินเข้ม */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.order-table td {
+  background-color: #ffffff; /* คงพื้นหลังเซลล์เป็นขาวเพื่อ contrast */
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+.stat-box {
+  background-color: #bbdefb; /* กล่องสถานะน้ำเงินอ่อน */
+  border: 1px solid #90caf9;
+}
+.btn-green {
+  background-color: #039be5; /* ปุ่ม teal น้ำเงิน */
+  color: white;
+}
+.menu-item {
+  color: #0d47a1; /* ตัวอักษรเมนูน้ำเงินเข้ม */
+}
+.menu-item.active {
+  background-color: #64b5f6; /* เมนู active น้ำเงินอ่อน */
+  color: white;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.username {
+  background-color: #bbdefb; /* highlight ชื่อร้าน */
+  color: #0d47a1;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-block;
 }

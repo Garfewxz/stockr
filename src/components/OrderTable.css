@@ -1,0 +1,90 @@
+.order-table-wrapper {
+  padding: 20px;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-search {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-reset {
+  background-color: #eee;
+  color: #333;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.status-boxes {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.status-box {
+  padding: 10px;
+  border-radius: 6px;
+  color: white;
+  min-width: 100px;
+  text-align: center;
+}
+
+.status-value {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.status-label {
+  font-size: 12px;
+}
+
+.summary {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.order-table th,
+.order-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.price {
+  color: orange;
+  font-weight: bold;
+}
+
+.status-tag {
+  background-color: #ffeb3b;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
